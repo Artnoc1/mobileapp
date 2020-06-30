@@ -7,35 +7,35 @@
   <color name="launcherBackgroundDebug">#FF71719E</color>
 
   <!--Theme related-->
-  <color name="accent">#FF328FFF</color>
+  <color name="accent">#FFE57CD8</color>
   <color name="fallbackStatusBar">#FF121212</color>
   <color name="outdatedStatusBar">#FFBDBDBD</color>
-  <color name="textEditBackgroundTint">#FFE2E2E2</color>
+  <color name="textEditBackgroundTint">#FFFFFBFA</color>
 
   <!-- App wide-->
-  <color name="icon">#FF757575</color>
-  <color name="checkboxTint">#FF328FFF</color>
-  <color name="raisedButtonBackground">#FF328FFF</color>
+  <color name="icon">#FF827188</color>
+  <color name="checkboxTint">#FFE57CD8</color>
+  <color name="raisedButtonBackground">#FFE57CD8</color>
 
   <!-- Text -->
   <color name="placeholderText">#FFCECECE</color>
   <color name="defaultIcon">#FF959595</color>
-  <color name="flatButtonText">#FF328FFF</color>
-  <color name="flatButtonDisabledText">#7A328FFF</color>
+  <color name="flatButtonText">#FFE57CD8</color>
+  <color name="flatButtonDisabledText">#FFE57CD8</color>
   <color name="raisedButtonText">#FFFFFFFF</color>
   <color name="raisedButtonDisabledText">#7AFFFFFF</color>
 
   <!--Navigation bar-->
-  <color name="bottomBarIcon">#FF328FFF</color>
+  <color name="bottomBarIcon">#FFE57CD8</color>
   <color name="bottomBarText">#FF9F9F9F</color>
 
   <!-- Reports page-->
-  <color name="reportsLabel">#FF757575</color>
-  <color name="summaryLoadingText">#FF757575</color>
-  <color name="regularChartBar">#1E328FFF</color>
-  <color name="filledChartBar">#FF328FFF</color>
-  <color name="billablePercentageText">#FF00ABFC</color>
-  <color name="totalTimeText">#4CD964</color>
+  <color name="reportsLabel">#FF827188</color>
+  <color name="summaryLoadingText">#FF827188</color>
+  <color name="regularChartBar">#F7D8F3</color>
+  <color name="filledChartBar">#EA96E0</color>
+  <color name="billablePercentageText">#FFE57CD8</color>
+  <color name="totalTimeText">#FFE57CD8</color>
   <color name="disabledReportFeature">#FFB5BCC0</color>
   <color name="placeholderBarFilled">#19000000</color>
   <color name="placeholderBarRegular">#0F000000</color>
@@ -48,12 +48,12 @@
   <color name="extraMonthTextColor">#959595</color>
   <color name="selectedTextColor">#FFFFFF</color>
   <color name="todayMarkerBackground">#E0E0E0</color>
-  <color name="selectionBackground">#328FFF</color>
+  <color name="selectionBackground">#FFDE91</color>
   <color name="shortcutBackground">#5B5B5B</color>
 
   <!--Calendar page-->
   <color name="calendarHeaderBackground">#FF959595</color>
-  <color name="currentHourColor">#FF328FFF</color>
+  <color name="currentHourColor">#FFE57CD8</color>
   <color name="contextualMenuDiscardIconOverlay">#E0E0E0</color>
   <color name="contextualMenuEditIconOverlay">#C3E6F6</color>
   <color name="contextualMenuSaveIconOverlay">#F3E2B0</color>
@@ -64,9 +64,9 @@
   <color name="contextualMenuContinueIconOverlay">#D4F6DA</color>
 
   <!-- Start Time entry page-->
-  <color name="billable">#FF328FFF</color>
-  <color name="nonBillable">#FFE6F1FF</color>
-  <color name="runningEntryTimer">#FF328FFF</color>
+  <color name="billable">#FFE57CD8</color>
+  <color name="nonBillable">#F7D8F3</color>
+  <color name="runningEntryTimer">#FFE57CD8</color>
 
   <!--Project page-->
   <color name="clientName">#FF5E5B5B</color>
@@ -82,26 +82,27 @@
   <color name="black40percent">#65000000</color>
 
   <!-- App wide day/night specific -->
-  <color name="cardBackground">#FFFFFFFF</color>
-  <color name="background">#FFFAFBFC</color>
-  <color name="transparentCard">#00FFFFFF</color>
-  <color name="transparentBackground">#00FAFBFC</color>
+  <color name="cardBackground">#FFF6EEF0</color>
+  <color name="background">#FFFFFBFA</color>
+  <color name="transparentCard">#00F6EEF0</color>
+  <color name="transparentBackground">#00FFFBFA</color>
   <color name="primaryText">#FF000000</color>
   <color name="secondaryText">#FF959595</color>
   <color name="timerPageDurationText">#FF5E5B5B</color>
-  <color name="navigationBar">#FFFFFFFF</color>
+  <color name="navigationBar">#FFFFFBFA</color>
   <color name="errorText">#FFE20505</color>
   <color name="separator">#FFE5E5E5</color>
-  <color name="stopTimeEntryButtonBackground">#FFE20505</color>
-  <color name="startTimeEntryButtonBackground">#FF1AD180</color>
-  <color name="startTimeEntryButtonAnimation">#FF009F53</color>
+  <color name="stopTimeEntryButtonBackground">#FFFF8879</color>
+  <color name="startTimeEntryButtonBackground">#FF200D27</color>
+  <color name="startTimeEntryButtonAnimation">#FF200D27</color>
   <color name="licensesBorder">#1E000000</color>
   <color name="licensesBackground">#FFF3F3F3</color>
   <color name="tagToken">#FF000000</color>
   <color name="darkBackground">#303030</color>
   <color name="primaryTextOnDarkBackground">#DDFFFFFF</color>
   <color name="weekStripeDisabledDayColor">#BDBDBD</color>
-  <color name="toolbarActionColor">#2F6BDF</color>
+  <color name="toolbarActionColor">#FFE57CD8</color>
+  <color name="fadedToolbarActionColor">#FAE5F7</color>
   
   <!-- Login/Sign Up -->
   <color name="loginSignUpOptionsDivider">#F3F3F3</color>
