@@ -72,7 +72,7 @@
   <color name="clientName">#FF5E5B5B</color>
 
   <!-- Settings page-->
-  <color name="syncStateSyncedText">#4CD964</color>
+  <color name="syncStateSyncedText">#FFE57CD8</color>
 
   <!--Placeholder time entry -->
   <color name="halfTransparentPurple">#8F9E5BD9</color>
@@ -126,6 +126,6 @@
   <color name="onBoardingTabIndicatorDeselected">#33FFFFFF</color>
   <color name="onboardingLoadingIndicatorColor">#CBF2F0</color>
   <color name="onboardingTogglLogoText">#000000</color>
-  <color name="tooltipBackground">#FF0FA8F5</color>
+  <color name="tooltipBackground">#FFE57CD8</color>
   <color name="tooltipText">#FFFFFFFF</color>
 </resources>

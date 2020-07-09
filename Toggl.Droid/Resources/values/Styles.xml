@@ -141,7 +141,7 @@
         <item name="errorEnabled">true</item>
         <item name="errorIconTint">@color/errorText</item>
         <item name="errorTextColor">#B00020</item>
-        <item name="hintTextColor">#328FFF</item>
+        <item name="hintTextColor">@color/accent</item>
     </style>
 
     <style name="ThemeOverlay.App.TextInputEditText.OutlinedBox" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
