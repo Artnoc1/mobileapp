@@ -32,7 +32,7 @@
                 <outlet property="RunningTimeEntryTooltipCloseIcon" destination="aT2-CI-qi9" id="8KX-OM-FZt"/>
                 <outlet property="RunningTimeEntryTooltipLabel" destination="dCP-Af-qYJ" id="mZC-BR-jXO"/>
                 <outlet property="SendFeedbackSuccessView" destination="fge-d2-Ud2" id="J5U-mZ-rsF"/>
-                <outlet property="StartTimeEntryButton" destination="4Kk-Hz-RBS" id="name-outlet-4Kk-Hz-RBS"/>
+                <outlet property="StartTimeEntryButton" destination="JcZ-Hd-kNq" id="fYH-ME-9Jl"/>
                 <outlet property="StartTimeEntryTooltip" destination="bcc-wP-og6" id="lIX-aV-C5f"/>
                 <outlet property="StartTimeEntryTooltipArrow" destination="75Q-3G-Ryw" id="egH-3J-vZL"/>
                 <outlet property="StartTimeEntryTooltipBackground" destination="5b1-Hh-Pp9" id="VFC-ul-8Mq"/>
@@ -128,7 +128,7 @@ Time Entry on Toggl mobile app 🎉</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.023529411760000001" green="0.66666666669999997" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="DarkAccent"/>
                                     <color key="tintColor" name="OnboardingTooltipBackground"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="7m1-xV-CPq" secondAttribute="bottom" constant="16" id="4jp-yw-jBG"/>
@@ -268,22 +268,36 @@ Time Entry on Toggl mobile app 🎉</string>
                         <constraint firstItem="E3W-8n-IfX" firstAttribute="leading" secondItem="vou-B4-go4" secondAttribute="leading" constant="48" id="qd2-Cm-m2L"/>
                     </constraints>
                 </view>
-                <imageView opaque="NO" contentMode="center" image="playIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4Kk-Hz-RBS">
-                    <rect key="frame" x="295" y="538" width="80" height="80"/>
-                    <accessibility key="accessibilityConfiguration" identifier="MainStartTimeEntry"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcZ-Hd-kNq" userLabel="Start TE Button">
+                    <rect key="frame" x="307" y="550" width="56" height="56"/>
+                    <color key="backgroundColor" name="DarkAccent"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="80" id="ZPS-gP-0Ab"/>
-                        <constraint firstAttribute="width" constant="80" id="eb6-9a-GbS"/>
+                        <constraint firstAttribute="height" constant="56" id="BbI-lx-sAk"/>
+                        <constraint firstAttribute="width" constant="56" id="e5o-Fv-hOd"/>
                     </constraints>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddo-IW-xE3">
-                    <rect key="frame" x="319" y="554" width="56" height="56"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="play"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="28"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddo-IW-xE3" userLabel="Stop TE Button">
+                    <rect key="frame" x="330" y="565" width="34" height="34"/>
+                    <color key="backgroundColor" name="StopButton"/>
                     <accessibility key="accessibilityConfiguration" identifier="MainStopTimeEntry"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="56" id="cJZ-zk-6qM"/>
-                        <constraint firstAttribute="height" constant="56" id="urN-jP-06M"/>
+                        <constraint firstAttribute="width" constant="34" id="cJZ-zk-6qM"/>
+                        <constraint firstAttribute="height" constant="34" id="urN-jP-06M"/>
                     </constraints>
-                    <state key="normal" image="stopIcon"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="stopButtonIcon"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fge-d2-Ud2">
                     <rect key="frame" x="8" y="436.5" width="359" height="85.5"/>
@@ -294,7 +308,7 @@ Time Entry on Toggl mobile app 🎉</string>
                                 <rect key="frame" x="0.0" y="0.0" width="359" height="85.5"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </view>
-                            <color key="backgroundColor" red="0.83137254900000002" green="0.94509803920000002" blue="0.99607843139999996" alpha="0.82999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" name="Non-billable"/>
                             <blurEffect style="light"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -308,13 +322,13 @@ Time Entry on Toggl mobile app 🎉</string>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DONE!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNw-4A-zNm">
                             <rect key="frame" x="42" y="13" width="45" height="17"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                            <color key="textColor" red="0.070588235289999995" green="0.53725490200000003" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" name="Billable"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for the feedback. If you had any questions, we’ll get back to you soon." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOL-Gh-maB">
                             <rect key="frame" x="42" y="36" width="305" height="33.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="textColor" red="0.070588235289999995" green="0.53725490200000003" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" name="Billable"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -354,7 +368,7 @@ Tap to edit it.</string>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" red="0.023529411764705882" green="0.66666666666666663" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="DarkAccent"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="dCP-Af-qYJ" secondAttribute="trailing" constant="22" id="3TH-56-ZmU"/>
                                 <constraint firstAttribute="bottom" secondItem="dCP-Af-qYJ" secondAttribute="bottom" constant="14" id="9gt-JI-liq"/>
@@ -410,7 +424,7 @@ Tap to edit it.</string>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" red="0.023529411764705882" green="0.66666666666666663" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="DarkAccent"/>
                             <color key="tintColor" name="OnboardingTooltipBackground"/>
                             <constraints>
                                 <constraint firstItem="JLj-ez-EYK" firstAttribute="top" secondItem="5b1-Hh-Pp9" secondAttribute="top" constant="15" id="WiR-RV-KTI"/>
@@ -466,7 +480,7 @@ Tap to edit it.</string>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" red="0.023529411760000001" green="0.66666666669999997" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="DarkAccent"/>
                             <color key="tintColor" name="OnboardingTooltipBackground"/>
                             <constraints>
                                 <constraint firstItem="gkV-Mf-DyQ" firstAttribute="leading" secondItem="IGl-zX-WY5" secondAttribute="leading" constant="15" id="3eJ-5R-AUi"/>
@@ -512,17 +526,15 @@ Tap to edit it.</string>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="fge-d2-Ud2" secondAttribute="trailing" priority="750" constant="8" id="1SE-ip-Wha"/>
-                <constraint firstItem="4Kk-Hz-RBS" firstAttribute="top" secondItem="fge-d2-Ud2" secondAttribute="bottom" constant="16" id="25m-1j-RN6"/>
-                <constraint firstItem="Ddo-IW-xE3" firstAttribute="top" secondItem="65C-4h-51c" secondAttribute="bottom" constant="-8" id="6Fu-Qw-QZd"/>
                 <constraint firstAttribute="trailing" secondItem="vou-B4-go4" secondAttribute="trailing" priority="750" id="83s-7t-oAW"/>
-                <constraint firstAttribute="trailing" secondItem="4Kk-Hz-RBS" secondAttribute="trailing" id="90o-lU-zgz"/>
-                <constraint firstItem="S4t-q9-ct9" firstAttribute="bottom" secondItem="4Kk-Hz-RBS" secondAttribute="bottom" id="DYd-Ht-tay"/>
-                <constraint firstItem="4Kk-Hz-RBS" firstAttribute="top" secondItem="bcc-wP-og6" secondAttribute="bottom" constant="-7" id="Fcy-ck-FF0"/>
+                <constraint firstItem="Ddo-IW-xE3" firstAttribute="top" secondItem="65C-4h-51c" secondAttribute="bottom" constant="3" id="HAj-Yg-llI"/>
                 <constraint firstItem="vou-B4-go4" firstAttribute="top" secondItem="b95-fG-diW" secondAttribute="bottom" id="LFh-9t-a19"/>
                 <constraint firstItem="vou-B4-go4" firstAttribute="top" secondItem="S4t-q9-ct9" secondAttribute="bottom" constant="-72" id="Lpx-CQ-TA7"/>
                 <constraint firstItem="hoP-Tg-vBM" firstAttribute="centerX" secondItem="S4t-q9-ct9" secondAttribute="centerX" id="Q2g-g8-PMQ"/>
-                <constraint firstItem="Ddo-IW-xE3" firstAttribute="trailing" secondItem="vou-B4-go4" secondAttribute="trailing" id="RsZ-Od-g2H"/>
+                <constraint firstItem="Ddo-IW-xE3" firstAttribute="trailing" secondItem="vou-B4-go4" secondAttribute="trailing" constant="-11" id="RsZ-Od-g2H"/>
                 <constraint firstAttribute="trailing" secondItem="Jhd-oR-xIN" secondAttribute="trailing" id="TAP-Mf-VjB"/>
+                <constraint firstItem="S4t-q9-ct9" firstAttribute="bottom" secondItem="JcZ-Hd-kNq" secondAttribute="bottom" constant="12" id="YgQ-me-nwo"/>
+                <constraint firstItem="JcZ-Hd-kNq" firstAttribute="top" secondItem="65C-4h-51c" secondAttribute="bottom" constant="-12" id="ZvI-Za-osj"/>
                 <constraint firstItem="Jhd-oR-xIN" firstAttribute="top" secondItem="S4t-q9-ct9" secondAttribute="top" id="cO8-xe-txr"/>
                 <constraint firstAttribute="bottom" secondItem="vou-B4-go4" secondAttribute="bottom" id="eTc-gF-8yE"/>
                 <constraint firstItem="b95-fG-diW" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="ffs-iZ-9a1"/>
@@ -531,9 +543,12 @@ Tap to edit it.</string>
                 <constraint firstItem="fge-d2-Ud2" firstAttribute="centerX" secondItem="S4t-q9-ct9" secondAttribute="centerX" id="pke-Cq-lDE"/>
                 <constraint firstItem="vou-B4-go4" firstAttribute="leading" secondItem="2" secondAttribute="leading" priority="750" id="q3O-7e-AfR"/>
                 <constraint firstItem="fge-d2-Ud2" firstAttribute="leading" secondItem="2" secondAttribute="leading" priority="750" constant="8" id="r4o-tI-pyA"/>
-                <constraint firstItem="Ddo-IW-xE3" firstAttribute="top" secondItem="vou-B4-go4" secondAttribute="top" constant="8" id="rDp-HB-uui"/>
-                <constraint firstItem="75Q-3G-Ryw" firstAttribute="centerX" secondItem="4Kk-Hz-RBS" secondAttribute="centerX" id="xQE-yX-1WF"/>
+                <constraint firstItem="Ddo-IW-xE3" firstAttribute="top" secondItem="vou-B4-go4" secondAttribute="top" constant="19" id="rDp-HB-uui"/>
+                <constraint firstItem="S4t-q9-ct9" firstAttribute="trailing" secondItem="JcZ-Hd-kNq" secondAttribute="trailing" constant="12" id="rpo-Sy-OUy"/>
+                <constraint firstItem="75Q-3G-Ryw" firstAttribute="centerX" secondItem="JcZ-Hd-kNq" secondAttribute="centerX" id="rul-7r-sxA"/>
+                <constraint firstItem="JcZ-Hd-kNq" firstAttribute="top" secondItem="fge-d2-Ud2" secondAttribute="bottom" constant="28" id="wGD-Wp-fH6"/>
                 <constraint firstItem="vou-B4-go4" firstAttribute="centerX" secondItem="S4t-q9-ct9" secondAttribute="centerX" id="xZy-96-mgm"/>
+                <constraint firstItem="JcZ-Hd-kNq" firstAttribute="top" secondItem="bcc-wP-og6" secondAttribute="bottom" constant="5" id="xxM-bN-5ui"/>
                 <constraint firstItem="Jhd-oR-xIN" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="yWZ-Xb-sTX"/>
                 <constraint firstItem="amM-QK-XMX" firstAttribute="centerX" secondItem="Ddo-IW-xE3" secondAttribute="centerX" id="yjZ-fe-0Qp"/>
             </constraints>
@@ -549,14 +564,26 @@ Tap to edit it.</string>
     </objects>
     <resources>
         <image name="confirmation" width="16" height="16"/>
-        <image name="playIcon" width="56" height="56"/>
-        <image name="stopIcon" width="34" height="34"/>
+        <image name="play" width="12" height="16"/>
+        <image name="stopButtonIcon" width="14" height="14"/>
         <image name="x" width="7" height="7"/>
         <namedColor name="Background">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="Billable">
+            <color red="0.89803922176361084" green="0.48627451062202454" blue="0.84705883264541626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkAccent">
+            <color red="0.12549020349979401" green="0.050980392843484879" blue="0.15294118225574493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Non-billable">
+            <color red="0.9686274528503418" green="0.84705883264541626" blue="0.9529411792755127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="OnboardingTooltipBackground">
             <color red="0.023529412224888802" green="0.66666668653488159" blue="0.96078431606292725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="StopButton">
+            <color red="1" green="0.53333336114883423" blue="0.47450980544090271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TableBackground">
             <color red="0.9529411792755127" green="0.94901961088180542" blue="0.97647058963775635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

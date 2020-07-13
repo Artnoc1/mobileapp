@@ -13,7 +13,7 @@ namespace Toggl.iOS.Cells.Common
 	partial class SelectorCell
 	{
 		[Outlet]
-		UIKit.UIImageView CheckMark { get; set; }
+		UIKit.UIView CheckMark { get; set; }
 
 		[Outlet]
 		UIKit.UILabel NameLabel { get; set; }

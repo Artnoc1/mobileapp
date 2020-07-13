@@ -13,7 +13,7 @@ namespace Toggl.iOS.Views.Settings
 	partial class SiriShortcutReportPeriodCell
 	{
 		[Outlet]
-		UIKit.UIImageView SelectedImageView { get; set; }
+		UIKit.UIView SelectedImageView { get; set; }
 
 		[Outlet]
 		UIKit.UILabel TextLabel { get; set; }

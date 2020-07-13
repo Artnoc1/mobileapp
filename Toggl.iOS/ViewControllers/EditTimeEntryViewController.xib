@@ -173,6 +173,7 @@
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" image="icAdd" translatesAutoresizingMaskIntoConstraints="NO" id="oHS-Wc-X7K">
                                                             <rect key="frame" x="0.0" y="5" width="10" height="10"/>
+                                                            <color key="tintColor" name="Accent"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Add project/task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIb-bL-aFc">
                                                             <rect key="frame" x="16.000000000000007" y="0.0" width="106.66666666666669" height="20"/>
@@ -241,6 +242,7 @@
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="icAdd" translatesAutoresizingMaskIntoConstraints="NO" id="mQV-X8-uuW">
                                                             <rect key="frame" x="0.0" y="3.3333333333333712" width="10" height="10"/>
+                                                            <color key="tintColor" name="Accent"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Add tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqB-O4-PPQ">
                                                             <rect key="frame" x="15.999999999999996" y="0.0" width="57.666666666666657" height="17"/>
@@ -365,7 +367,7 @@
                                                         <constraint firstAttribute="height" constant="40" id="Cdz-G4-Iiq"/>
                                                     </constraints>
                                                     <state key="normal" title="Stop">
-                                                        <color key="titleColor" red="0.29803921568627451" green="0.85098039215686272" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" name="Accent"/>
                                                     </state>
                                                 </button>
                                             </subviews>
@@ -527,6 +529,7 @@
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vWw-JK-JJ7">
                                             <rect key="frame" x="255" y="12.666666666666742" width="51" height="31"/>
                                             <accessibility key="accessibilityConfiguration" identifier="EditTimeEntryBillable"/>
+                                            <color key="onTintColor" name="DarkAccent"/>
                                         </switch>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -589,7 +592,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PY-gD-iJQ">
                             <rect key="frame" x="128" y="0.0" width="176" height="40"/>
-                            <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" name="Accent"/>
                             <accessibility key="accessibilityConfiguration" label="EditTimeEntryConfirm"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="lxq-zY-9wH"/>
@@ -726,11 +729,17 @@
         <image name="icDatetime" width="14" height="14"/>
         <image name="icErrorEdit" width="16" height="16"/>
         <image name="x" width="7" height="7"/>
+        <namedColor name="Accent">
+            <color red="0.89803922176361084" green="0.48627451062202454" blue="0.84705883264541626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Background">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="CustomGray4">
             <color red="0.81960785388946533" green="0.81960785388946533" blue="0.83921569585800171" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkAccent">
+            <color red="0.12549020349979401" green="0.050980392843484879" blue="0.15294118225574493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="ErrorBackground">
             <color red="1" green="0.96470588445663452" blue="0.96470588445663452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

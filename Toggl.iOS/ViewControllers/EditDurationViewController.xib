@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -63,7 +64,7 @@
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                     <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="2"/>
                     <state key="normal" title="Save">
-                        <color key="titleColor" red="0.29803921568627451" green="0.85098039215686272" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" name="Accent"/>
                     </state>
                 </button>
                 <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="bRk-TA-ikl">
@@ -85,7 +86,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="icEndLabel" translatesAutoresizingMaskIntoConstraints="NO" id="xO0-Bb-VWh">
-                                            <rect key="frame" x="45.5" y="3" width="18" height="18"/>
+                                            <rect key="frame" x="54.5" y="7.5" width="9" height="9"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTr-8e-VhT">
                                             <rect key="frame" x="-7.5" y="24" width="159" height="31"/>
@@ -106,7 +107,9 @@
                                                         <constraint firstAttribute="height" constant="31" id="Myc-hS-Jc4"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <state key="normal" title="Stop"/>
+                                                    <state key="normal" title="Stop">
+                                                        <color key="titleColor" name="Accent"/>
+                                                    </state>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:30" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cF2-5n-ALR">
                                                     <rect key="frame" x="50" y="0.0" width="39.5" height="31"/>
@@ -153,7 +156,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="icStartLabel" translatesAutoresizingMaskIntoConstraints="NO" id="Rb0-t8-ESu">
-                                            <rect key="frame" x="42" y="2" width="18" height="20"/>
+                                            <rect key="frame" x="51" y="7" width="9" height="10"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2y-9L-nF2">
                                             <rect key="frame" x="17.5" y="24" width="109" height="31.5"/>
@@ -244,7 +247,7 @@
                                     <rect key="frame" x="83" y="96" width="122" height="32"/>
                                     <subviews>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="duration" translatesAutoresizingMaskIntoConstraints="NO" id="KQv-M8-qqz">
-                                            <rect key="frame" x="12" y="0.0" width="13" height="32"/>
+                                            <rect key="frame" x="12" y="8" width="13" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="13" id="4JR-rt-cq0"/>
                                             </constraints>
@@ -316,23 +319,26 @@
         <image name="icBack" width="40" height="40"/>
         <image name="icEndLabel" width="9" height="9"/>
         <image name="icStartLabel" width="9" height="10"/>
+        <namedColor name="Accent">
+            <color red="0.89803922176361084" green="0.48627451062202454" blue="0.84705883264541626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Background">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="CustomGray5">
-            <color red="0.17254902422428131" green="0.17254902422428131" blue="0.18039216101169586" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="CustomGray6">
-            <color red="0.070588238537311554" green="0.070588238537311554" blue="0.078431375324726105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Text">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="CustomGray5">
+            <color red="0.89803922176361084" green="0.89803922176361084" blue="0.91764706373214722" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomGray6">
+            <color red="0.98039215803146362" green="0.98039215803146362" blue="0.98823529481887817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Text2">
-            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.96078431372549022" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411852359772" green="0.23529411852359772" blue="0.26274511218070984" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text3">
-            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.96078431372549022" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411852359772" green="0.23529411852359772" blue="0.26274511218070984" alpha="0.30196079611778259" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

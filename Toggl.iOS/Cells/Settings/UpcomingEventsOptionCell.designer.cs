@@ -13,21 +13,21 @@ namespace Toggl.iOS.Cells.Settings
 	partial class UpcomingEventsOptionCell
 	{
 		[Outlet]
-		UIKit.UIImageView SelectedImageView { get; set; }
+		UIKit.UIView SelectedImageView { get; set; }
 
 		[Outlet]
 		UIKit.UILabel TitleLabel { get; set; }
-
+		
 		void ReleaseDesignerOutlets ()
 		{
-			if (TitleLabel != null) {
-				TitleLabel.Dispose ();
-				TitleLabel = null;
-			}
-
 			if (SelectedImageView != null) {
 				SelectedImageView.Dispose ();
 				SelectedImageView = null;
+			}
+
+			if (TitleLabel != null) {
+				TitleLabel.Dispose ();
+				TitleLabel = null;
 			}
 		}
 	}

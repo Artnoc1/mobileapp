@@ -176,14 +176,23 @@
                             <state key="normal" image="icDatetime"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hya-nl-hcs">
-                            <rect key="frame" x="325" y="0.0" width="50" height="50"/>
+                            <rect key="frame" x="329.5" y="6.5" width="37.5" height="37.5"/>
+                            <color key="backgroundColor" name="DarkAccent"/>
                             <accessibility key="accessibilityConfiguration" label="StartTimeEntryDone"/>
-                            <state key="normal" image="doneGreen"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Hya-nl-hcs" secondAttribute="height" multiplier="1:1" id="04s-II-GOQ"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="icDone"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <real key="value" value="18.75"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </button>
                     </subviews>
                     <color key="backgroundColor" name="Background"/>
                     <constraints>
-                        <constraint firstItem="Hya-nl-hcs" firstAttribute="width" secondItem="dU3-s1-ELa" secondAttribute="height" multiplier="1:1" id="05f-8r-PWq"/>
                         <constraint firstItem="qfx-lJ-emc" firstAttribute="height" secondItem="dU3-s1-ELa" secondAttribute="height" id="57F-eo-fSD"/>
                         <constraint firstItem="Dr2-ax-s3L" firstAttribute="centerY" secondItem="dU3-s1-ELa" secondAttribute="centerY" id="Abl-vi-YXy"/>
                         <constraint firstItem="Dr2-ax-s3L" firstAttribute="height" secondItem="dU3-s1-ELa" secondAttribute="height" id="FZa-F1-FZC"/>
@@ -191,8 +200,8 @@
                         <constraint firstItem="Xnc-Zt-xWV" firstAttribute="leading" secondItem="H7M-A1-mmK" secondAttribute="trailing" id="LML-We-R2J"/>
                         <constraint firstItem="H7M-A1-mmK" firstAttribute="leading" secondItem="qfx-lJ-emc" secondAttribute="trailing" id="Ri0-zk-3nr"/>
                         <constraint firstItem="Xnc-Zt-xWV" firstAttribute="centerY" secondItem="dU3-s1-ELa" secondAttribute="centerY" id="Vd4-Yu-HhR"/>
-                        <constraint firstItem="Hya-nl-hcs" firstAttribute="height" secondItem="dU3-s1-ELa" secondAttribute="height" id="b12-fm-KQu"/>
-                        <constraint firstAttribute="trailing" secondItem="Hya-nl-hcs" secondAttribute="trailing" id="c5E-bE-Rmf"/>
+                        <constraint firstItem="Hya-nl-hcs" firstAttribute="height" secondItem="dU3-s1-ELa" secondAttribute="height" multiplier="0.75" id="b12-fm-KQu"/>
+                        <constraint firstAttribute="trailing" secondItem="Hya-nl-hcs" secondAttribute="trailing" constant="8" id="c5E-bE-Rmf"/>
                         <constraint firstItem="qfx-lJ-emc" firstAttribute="centerY" secondItem="dU3-s1-ELa" secondAttribute="centerY" id="cAA-Z2-S3c"/>
                         <constraint firstItem="H7M-A1-mmK" firstAttribute="height" secondItem="dU3-s1-ELa" secondAttribute="height" id="hqX-GV-pOY"/>
                         <constraint firstItem="Xnc-Zt-xWV" firstAttribute="height" secondItem="dU3-s1-ELa" secondAttribute="height" id="jbV-rK-h42"/>
@@ -220,7 +229,7 @@ to assign a Project to a Time Entry</string>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" red="0.023529411760000001" green="0.66666666669999997" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="DarkAccent"/>
                             <constraints>
                                 <constraint firstItem="4u9-yv-jfj" firstAttribute="leading" secondItem="GKZ-Z4-sVf" secondAttribute="leading" constant="14" id="EjS-rm-AKp"/>
                                 <constraint firstAttribute="bottom" secondItem="4u9-yv-jfj" secondAttribute="bottom" constant="14" id="nLv-9o-E2q"/>
@@ -289,11 +298,11 @@ to assign a Project to a Time Entry</string>
     </objects>
     <resources>
         <image name="date" width="14" height="15"/>
-        <image name="doneGreen" width="50" height="50"/>
         <image name="duration" width="13" height="16"/>
         <image name="icBillable" width="8" height="16"/>
         <image name="icClose" width="10" height="10"/>
         <image name="icDatetime" width="14" height="14"/>
+        <image name="icDone" width="16" height="12"/>
         <image name="icProjects" width="16" height="12"/>
         <image name="icTags" width="14" height="13"/>
         <image name="x" width="7" height="7"/>
@@ -302,6 +311,9 @@ to assign a Project to a Time Entry</string>
         </namedColor>
         <namedColor name="CustomGray6">
             <color red="0.98039215803146362" green="0.98039215803146362" blue="0.98823529481887817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkAccent">
+            <color red="0.12549020349979401" green="0.050980392843484879" blue="0.15294118225574493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

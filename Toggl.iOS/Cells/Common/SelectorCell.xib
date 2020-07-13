@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7n-7F-Qvt">
@@ -24,30 +23,51 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icCheckBoxChecked" translatesAutoresizingMaskIntoConstraints="NO" id="wfb-Ay-e0o">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pl9-Bd-r8f">
                         <rect key="frame" x="290" y="15" width="14" height="14"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icDoneSmall" translatesAutoresizingMaskIntoConstraints="NO" id="wfb-Ay-e0o">
+                                <rect key="frame" x="3.5" y="3.5" width="7" height="7"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="7" id="QDi-HY-jG6"/>
+                                    <constraint firstAttribute="height" constant="7" id="xid-Z2-jer"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="DarkAccent"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="14" id="QDi-HY-jG6"/>
-                            <constraint firstAttribute="height" constant="14" id="xid-Z2-jer"/>
+                            <constraint firstAttribute="height" constant="14" id="I2Q-Xr-elP"/>
+                            <constraint firstItem="wfb-Ay-e0o" firstAttribute="centerY" secondItem="pl9-Bd-r8f" secondAttribute="centerY" id="KIg-Wf-4C5"/>
+                            <constraint firstItem="wfb-Ay-e0o" firstAttribute="centerX" secondItem="pl9-Bd-r8f" secondAttribute="centerX" id="fUP-V2-AzT"/>
+                            <constraint firstAttribute="width" constant="14" id="hIm-v5-s7M"/>
                         </constraints>
-                    </imageView>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="wfb-Ay-e0o" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="M7n-7F-Qvt" secondAttribute="trailing" constant="10" id="3cB-TE-lEm"/>
-                    <constraint firstItem="wfb-Ay-e0o" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="A2L-P4-F6N"/>
-                    <constraint firstAttribute="trailing" secondItem="wfb-Ay-e0o" secondAttribute="trailing" constant="16" id="O09-Y5-X6l"/>
+                    <constraint firstItem="pl9-Bd-r8f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="M7n-7F-Qvt" secondAttribute="trailing" constant="10" id="RdO-Rh-Alp"/>
+                    <constraint firstAttribute="trailing" secondItem="pl9-Bd-r8f" secondAttribute="trailing" constant="16" id="c0d-H5-lEL"/>
                     <constraint firstItem="M7n-7F-Qvt" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="16" id="lXB-g2-dMK"/>
+                    <constraint firstItem="pl9-Bd-r8f" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="nxO-Il-5zU"/>
                     <constraint firstItem="M7n-7F-Qvt" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="uTn-87-djo"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="CheckMark" destination="wfb-Ay-e0o" id="OXo-pR-fHL"/>
+                <outlet property="CheckMark" destination="pl9-Bd-r8f" id="dbK-b6-pB3"/>
                 <outlet property="NameLabel" destination="M7n-7F-Qvt" id="Rf7-Kq-lw8"/>
             </connections>
             <point key="canvasLocation" x="24.637681159420293" y="51.5625"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="icCheckBoxChecked" width="14" height="14"/>
+        <image name="icDoneSmall" width="12" height="9"/>
+        <namedColor name="DarkAccent">
+            <color red="0.12549020349979401" green="0.050980392843484879" blue="0.15294118225574493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

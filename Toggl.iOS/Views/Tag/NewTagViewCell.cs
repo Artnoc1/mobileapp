@@ -15,8 +15,6 @@ namespace Toggl.iOS.Views.Tag
 
         private static readonly UIColor selectedBackgroundColor
             = Colors.Common.LightGray.ToNativeColor();
-        private static UIImage checkBoxCheckedImage = UIImage.FromBundle("icCheckBoxChecked");
-        private static UIImage checkBoxUncheckedImage = UIImage.FromBundle("icCheckBoxUnchecked");
 
         static NewTagViewCell()
         {
@@ -44,7 +42,8 @@ namespace Toggl.iOS.Views.Tag
         protected override void UpdateView()
         {
             TextLabel.Text = Item.Name;
-            SelectedImageView.Image = Item.Selected ? checkBoxCheckedImage : checkBoxUncheckedImage;
+            UncheckedImageView.Hidden = !Item.Selected;
+            CheckedImageView.Hidden = Item.Selected;
         }
 
         private void setBackgroundColor(bool selected, bool animated)

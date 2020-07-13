@@ -273,12 +273,6 @@
     <ImageAsset Include="Resources\Images.xcassets\icUpS.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\playIcon.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\stopIcon.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Resources\Images.xcassets\icArrowUp.imageset\icArrowUp.png">
       <Visible>false</Visible>
     </ImageAsset>
@@ -403,15 +397,6 @@
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Images.xcassets\icUpS.imageset\icUpS%403x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\stopIcon.imageset\stopIcon.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\stopIcon.imageset\stopIcon%402x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\stopIcon.imageset\stopIcon%403x.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Images.xcassets\togglLogoWhite.imageset\Contents.json">
@@ -588,18 +573,6 @@
     <ImageAsset Include="Resources\Images.xcassets\icSearch.imageset\search%403x.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\icCheckBoxChecked.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\icCheckBoxChecked.imageset\checkboxChecked.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\icCheckBoxChecked.imageset\checkboxChecked%402x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\icCheckBoxChecked.imageset\checkboxChecked%403x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Resources\Images.xcassets\icCheckBoxUnchecked.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -759,18 +732,6 @@
     <ImageAsset Include="Resources\Images.xcassets\icIllustrationProjectsSmall.imageset\icIllustrationProjectsS%403x.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\manualIcon.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\manualIcon.imageset\manualIcon.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\manualIcon.imageset\manualIcon%402x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\manualIcon.imageset\manualIcon%403x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Resources\Images.xcassets\icBack.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -829,27 +790,6 @@
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Images.xcassets\icErrorEdit.imageset\icErrorEdit%403x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\playIcon.imageset\play.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\playIcon.imageset\play%402x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\playIcon.imageset\play%403x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\doneGreen.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\doneGreen.imageset\doneGreen.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\doneGreen.imageset\doneGreen%402x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\doneGreen.imageset\doneGreen%403x.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Images.xcassets\emojiRaisedHands.imageset\Contents.json">
@@ -1423,6 +1363,23 @@
     <ImageAsset Include="Resources\Images.xcassets\stopwatch.imageset\Stopwatch%403x.png" />
     <ImageAsset Include="Resources\Colors.xcassets\OnboardingTooltipBackground.colorset\Contents.json" />
     <ImageAsset Include="Resources\Colors.xcassets\OnboardingTooltipTextColor.colorset\Contents.json" />
+    <ImageAsset Include="Resources\Colors.xcassets\Accent.colorset\Contents.json" />
+    <ImageAsset Include="Resources\Colors.xcassets\Billable.colorset\Contents.json" />
+    <ImageAsset Include="Resources\Colors.xcassets\Non-billable.colorset\Contents.json" />
+    <ImageAsset Include="Resources\Colors.xcassets\DarkAccent.colorset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\play.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\play.imageset\continue%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\play.imageset\continue%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\play.imageset\continue.png" />
+    <ImageAsset Include="Resources\Images.xcassets\plusLarge.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\plusLarge.imageset\icAddS%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\plusLarge.imageset\icAddS%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\plusLarge.imageset\icAddS.png" />
+    <ImageAsset Include="Resources\Colors.xcassets\StopButton.colorset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\stopButtonIcon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\stopButtonIcon.imageset\stopIcon%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\stopButtonIcon.imageset\stopIcon%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\stopButtonIcon.imageset\stopIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -2308,6 +2265,14 @@
     <Folder Include="Resources\Images.xcassets\stopwatch.imageset\" />
     <Folder Include="Resources\Colors.xcassets\OnboardingTooltipBackground.colorset\" />
     <Folder Include="Resources\Colors.xcassets\OnboardingTooltipTextColor.colorset\" />
+    <Folder Include="Resources\Colors.xcassets\Accent.colorset\" />
+    <Folder Include="Resources\Colors.xcassets\Billable.colorset\" />
+    <Folder Include="Resources\Colors.xcassets\Non-billable.colorset\" />
+    <Folder Include="Resources\Colors.xcassets\DarkAccent.colorset\" />
+    <Folder Include="Resources\Images.xcassets\play.imageset\" />
+    <Folder Include="Resources\Images.xcassets\plusLarge.imageset\" />
+    <Folder Include="Resources\Colors.xcassets\StopButton.colorset\" />
+    <Folder Include="Resources\Images.xcassets\stopButtonIcon.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="GoogleService-Info.plist" />

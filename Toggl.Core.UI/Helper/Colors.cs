@@ -6,12 +6,12 @@ namespace Toggl.Core.UI.Helper
 {
     public static class Colors
     {
-        private static readonly Color lightishGreen = new Color(76, 217, 100);
+        private static readonly Color lightishPink = new Color(229, 124, 216);
         private static readonly Color steel = new Color(142, 142, 147);
         private static readonly Color darkMint = new Color(76, 190, 100);
         private static readonly Color pinkishGrey = new Color(206, 206, 206);
         private static readonly Color black = new Color(46, 46, 46);
-        private static readonly Color azure = new Color(6, 170, 245);
+        private static readonly Color darkishPink = new Color(229, 124, 216);
         private static readonly Color macaroniAndCheese = new Color(241, 195, 63);
         private static readonly Color easterPurple = new Color(197, 107, 255);
         private static readonly Color nearlyWhite = new Color(250, 251, 252);
@@ -27,7 +27,7 @@ namespace Toggl.Core.UI.Helper
 
         public static class Siri
         {
-            public static readonly Color AddButton = lightishGreen;
+            public static readonly Color AddButton = lightishPink;
             public static readonly Color InvocationPhrase = brownishGrey;
             public static readonly Color HeaderLabel = silver;
             public static readonly Color HeaderBackground = paleGreyTwo;
@@ -36,7 +36,7 @@ namespace Toggl.Core.UI.Helper
         public static class Onboarding
         {
             internal static readonly Color TrackPageBorderColor = new Color(14, 150, 213);
-            internal static readonly Color TrackPageBackgroundColor = new Color(6, 170, 245);
+            internal static readonly Color TrackPageBackgroundColor = darkishPink;
 
             internal static readonly Color LogPageBorderColor = new Color(165, 81, 220);
             internal static readonly Color LogPageBackgroundColor = new Color(187, 103, 241);
@@ -44,12 +44,12 @@ namespace Toggl.Core.UI.Helper
             internal static readonly Color ReportsPageBorderColor = new Color(230, 179, 31);
             internal static readonly Color ReportsPageBackgroundColor = macaroniAndCheese;
 
-            public static readonly Color BlueColor = azure;
+            public static readonly Color BlueColor = darkishPink;
             public static readonly Color PurpleColor = easterPurple;
             public static readonly Color YellowColor = macaroniAndCheese;
             public static readonly Color GrayColor = pinkishGrey;
 
-            internal static readonly Color LoginPageBackgroundColor = azure;
+            internal static readonly Color LoginPageBackgroundColor = darkishPink;
         }
 
         public static class Login
@@ -62,7 +62,7 @@ namespace Toggl.Core.UI.Helper
 
         public static class Signup
         {
-            public static readonly Color HighlightedText = azure;
+            public static readonly Color HighlightedText = darkishPink;
         }
 
         public static class NavigationBar
@@ -73,7 +73,7 @@ namespace Toggl.Core.UI.Helper
 
         public static class TabBar
         {
-            public static readonly Color SelectedImageTintColor = new Color(6, 170, 245);
+            public static readonly Color SelectedImageTintColor = darkishPink;
         }
 
         public static class Main
@@ -98,7 +98,7 @@ namespace Toggl.Core.UI.Helper
             public static readonly Color Syncing = lightGrey;
             public static readonly Color Offline = lightGrey;
             public static readonly Color SyncFailed = lightGrey;
-            public static readonly Color SyncCompleted = lightishGreen;
+            public static readonly Color SyncCompleted = lightishPink;
         }
 
         public static class TimeEntriesLog
@@ -111,7 +111,7 @@ namespace Toggl.Core.UI.Helper
 
             public static readonly Color DeleteSwipeActionBackground = new Color(247, 64, 73);
 
-            public static readonly Color ContinueSwipeActionBackground = lightishGreen;
+            public static readonly Color ContinueSwipeActionBackground = lightishPink;
 
             public static class Grouping
             {
@@ -126,7 +126,8 @@ namespace Toggl.Core.UI.Helper
                 {
                     public static readonly Color Border = new Color(255, 255, 255, 0);
                     public static readonly Color Background = whiteTwo;
-                    public static readonly Color Text = lightishGreen;
+                    public static readonly Color Text = lightishPink
+       ;
                 }
 
                 public static class GroupedTimeEntry
@@ -138,11 +139,11 @@ namespace Toggl.Core.UI.Helper
 
         public static class StartTimeEntry
         {
-            public static readonly Color Cursor = lightishGreen;
+            public static readonly Color Cursor = lightishPink;
 
             public static readonly Color Placeholder = pinkishGrey;
 
-            public static readonly Color ActiveButton = lightishGreen;
+            public static readonly Color ActiveButton = lightishPink;
 
             public static readonly Color BoldQuerySuggestionColor = new Color(181, 188, 192);
 
@@ -154,17 +155,17 @@ namespace Toggl.Core.UI.Helper
 
             public static readonly Color TokenBorder = new Color(232, 232, 232);
 
-            public static readonly Color AddIconColor = new Color(75, 200, 0);
+            public static readonly Color AddIconColor = lightishPink;
         }
 
         public static class DurationField
         {
-            public static readonly Color Cursor = lightishGreen;
+            public static readonly Color Cursor = lightishPink;
         }
 
         public static class NoWorkspace
         {
-            public static readonly Color ActivityIndicator = lightishGreen;
+            public static readonly Color ActivityIndicator = lightishPink;
             public static readonly Color DisabledCreateWorkspaceButton = new Color(255, 255, 255, 122);
         }
 
@@ -176,8 +177,8 @@ namespace Toggl.Core.UI.Helper
 
         public static class EditDuration
         {
-            public static readonly Color SetButton = lightishGreen;
-            public static readonly Color EditedTime = lightishGreen;
+            public static readonly Color SetButton = lightishPink;
+            public static readonly Color EditedTime = lightishPink;
             public static readonly Color NotEditedTime = black;
 
             public static class Wheel
@@ -231,8 +232,8 @@ namespace Toggl.Core.UI.Helper
 
         public static class Feedback
         {
-            public static readonly Color Cursor = lightishGreen;
-            public static readonly Color ActivityIndicator = lightishGreen;
+            public static readonly Color Cursor = lightishPink;
+            public static readonly Color ActivityIndicator = lightishPink;
         }
 
         public static class Common
@@ -246,13 +247,13 @@ namespace Toggl.Core.UI.Helper
 
         public static class Reports
         {
-            public static readonly Color PercentageActivated = new Color(0, 171, 252);
+            public static readonly Color PercentageActivated = lightishPink;
 
             public static readonly Color PercentageActivatedBackground = new Color(6, 170, 245, 61);
 
             public static readonly Color PercentageDisabled = new Color(181, 188, 192, 30);
 
-            public static readonly Color TotalTimeActivated = new Color(76, 217, 100);
+            public static readonly Color TotalTimeActivated = lightishPink;
 
             public static readonly Color DayNotInMonth = new Color(149, 149, 149);
 
@@ -262,7 +263,7 @@ namespace Toggl.Core.UI.Helper
             {
                 public static readonly Color Legend = silver;
 
-                public static readonly Color Billable = azure;
+                public static readonly Color Billable = darkishPink;
 
                 public static readonly Color NonBillable = new Color(71, 195, 252);
 
@@ -291,7 +292,7 @@ namespace Toggl.Core.UI.Helper
 
         public static class Calendar
         {
-            public static readonly Color EnableCalendarAction = lightishGreen;
+            public static readonly Color EnableCalendarAction = lightishPink;
         }
 
         public static readonly Color[] DefaultProjectColors =

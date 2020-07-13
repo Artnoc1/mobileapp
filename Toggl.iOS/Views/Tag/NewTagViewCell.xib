@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,35 +23,68 @@
                         <color key="textColor" name="Text"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kew-h6-XGt">
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icCheckBoxUnchecked" translatesAutoresizingMaskIntoConstraints="NO" id="Kew-h6-XGt">
                         <rect key="frame" x="290" y="15" width="14" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="71g-Z0-OnG"/>
                             <constraint firstAttribute="width" constant="14" id="mL5-QK-vZ7"/>
                         </constraints>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TsA-IO-vlv">
+                        <rect key="frame" x="290" y="15" width="14" height="14"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icDoneSmall" translatesAutoresizingMaskIntoConstraints="NO" id="SYq-HO-Beg">
+                                <rect key="frame" x="3.5" y="3.5" width="7" height="7"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="7" id="ZHo-Vm-9xe"/>
+                                    <constraint firstAttribute="width" constant="7" id="tRo-pz-Eer"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="DarkAccent"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="0lf-kU-xaX"/>
+                            <constraint firstItem="SYq-HO-Beg" firstAttribute="centerY" secondItem="TsA-IO-vlv" secondAttribute="centerY" id="awx-Jc-AXj"/>
+                            <constraint firstItem="SYq-HO-Beg" firstAttribute="centerX" secondItem="TsA-IO-vlv" secondAttribute="centerX" id="kYN-oD-BKr"/>
+                            <constraint firstAttribute="width" constant="14" id="qH9-lg-hrk"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" name="Background"/>
                 <constraints>
                     <constraint firstItem="FOl-IN-bcM" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="5Gy-LI-mxD"/>
                     <constraint firstItem="Kew-h6-XGt" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="R33-y2-YaW"/>
                     <constraint firstItem="FOl-IN-bcM" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="16" id="ZKw-qm-DPo"/>
+                    <constraint firstItem="TsA-IO-vlv" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="kzw-ea-PPc"/>
                     <constraint firstAttribute="trailing" secondItem="Kew-h6-XGt" secondAttribute="trailing" constant="16" id="waq-AX-MXp"/>
+                    <constraint firstAttribute="trailing" secondItem="TsA-IO-vlv" secondAttribute="trailing" constant="16" id="xeI-q5-Zzh"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="SelectedImageView" destination="Kew-h6-XGt" id="x68-by-XR8"/>
+                <outlet property="CheckedImageView" destination="TsA-IO-vlv" id="jNB-nb-1oD"/>
                 <outlet property="TextLabel" destination="FOl-IN-bcM" id="Svo-t4-Gsu"/>
+                <outlet property="UncheckedImageView" destination="Kew-h6-XGt" id="91r-wX-7Nd"/>
             </connections>
             <point key="canvasLocation" x="131" y="154"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="icCheckBoxUnchecked" width="14" height="14"/>
+        <image name="icDoneSmall" width="12" height="9"/>
         <namedColor name="Background">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkAccent">
+            <color red="0.12549020349979401" green="0.050980392843484879" blue="0.15294118225574493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

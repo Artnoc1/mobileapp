@@ -238,11 +238,11 @@ namespace Toggl.iOS.ViewControllers
                 .DisposedBy(disposeBag);
 
             //The start button
-            var trackModeImage = UIImage.FromBundle("playIcon");
-            var manualModeImage = UIImage.FromBundle("manualIcon");
+            var trackModeImage = UIImage.FromBundle("play").ImageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate);
+            var manualModeImage = UIImage.FromBundle("plusLarge").ImageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate);
             ViewModel.IsInManualMode
                 .Select(isInManualMode => isInManualMode ? manualModeImage : trackModeImage)
-                .Subscribe(image => StartTimeEntryButton.Image = image)
+                .Subscribe(image => StartTimeEntryButton.SetImage(image, UIControlState.Normal))
                 .DisposedBy(DisposeBag);
 
             //The sync failures button
@@ -305,8 +305,8 @@ namespace Toggl.iOS.ViewControllers
                 .DisposedBy(disposeBag);
 
             RunningTimeEntryTooltipArrow.Direction = TriangleView.TriangleDirection.Down;
-            RunningTimeEntryTooltipArrow.Color = ColorAssets.OnboardingTooltipBackground;;
-            RunningTimeEntryTooltipBackground.BackgroundColor = ColorAssets.OnboardingTooltipBackground;;
+            RunningTimeEntryTooltipArrow.Color = ColorAssets.OnboardingTooltipBackground;
+            RunningTimeEntryTooltipBackground.BackgroundColor = ColorAssets.OnboardingTooltipBackground;
 
             RunningTimeEntryTooltipLabel.Text = Resources.HereIsYourRunningTimeEntryTooltip;
             RunningTimeEntryTooltipLabel.SetLineSpacing(OnboardingConstants.LineSpacing, UITextAlignment.Center);

@@ -16,8 +16,8 @@ namespace Toggl.iOS.Views
 		UIKit.UILabel NameLabel { get; set; }
 
 		[Outlet]
-		UIKit.UIImageView SelectedImage { get; set; }
-
+		UIKit.UIView SelectedImage { get; set; }
+		
 		void ReleaseDesignerOutlets ()
 		{
 			if (NameLabel != null) {

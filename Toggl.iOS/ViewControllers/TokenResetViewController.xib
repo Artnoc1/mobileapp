@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina3_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,21 +30,21 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your API token has been reset." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKi-c4-YaU">
-                    <rect key="frame" x="36" y="142" width="248" height="14"/>
+                    <rect key="frame" x="36" y="122" width="248" height="14"/>
                     <accessibility key="accessibilityConfiguration" label="LoginError"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                     <color key="textColor" red="0.36862745099999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your password to log back in to your account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dj-pA-An9">
-                    <rect key="frame" x="36" y="159" width="248" height="14"/>
+                    <rect key="frame" x="36" y="139" width="248" height="14"/>
                     <accessibility key="accessibilityConfiguration" label="LoginError"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" red="0.36862745099999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mail@toggl.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyk-cD-col">
-                    <rect key="frame" x="36" y="174" width="248" height="14"/>
+                    <rect key="frame" x="36" y="154" width="248" height="14"/>
                     <accessibility key="accessibilityConfiguration" label="LoginError"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="14" id="BAO-0I-5dz"/>
@@ -55,33 +54,32 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="965-7g-Gu6" customClass="LoginTextField">
-                    <rect key="frame" x="36" y="221" width="248" height="56"/>
+                    <rect key="frame" x="36" y="201" width="248" height="56"/>
                     <accessibility key="accessibilityConfiguration" label="LoginPassword"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="343" id="Md0-4m-kVM"/>
                         <constraint firstAttribute="height" constant="56" id="Ye3-JL-RsE"/>
                     </constraints>
-                    <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEZ-w2-ebJ" userLabel="Show Password Button">
-                    <rect key="frame" x="244" y="233" width="40" height="40"/>
+                    <rect key="frame" x="244" y="213" width="40" height="40"/>
                     <accessibility key="accessibilityConfiguration" label="LoginShowPassword"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="IEZ-w2-ebJ" secondAttribute="height" multiplier="1:1" id="1eG-fg-HgB"/>
                     </constraints>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect password. Please try again." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7h-iN-bA7">
-                    <rect key="frame" x="36" y="283" width="248" height="14.5"/>
+                    <rect key="frame" x="36" y="263" width="248" height="14.5"/>
                     <accessibility key="accessibilityConfiguration" label="LoginError"/>
                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                     <color key="textColor" red="0.96862745100000003" green="0.25098039220000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEr-kl-tk3">
-                    <rect key="frame" x="36" y="317" width="248" height="40"/>
-                    <color key="backgroundColor" red="0.023529411760000001" green="0.66666666669999997" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="36" y="297" width="248" height="40"/>
+                    <color key="backgroundColor" name="Accent"/>
                     <accessibility key="accessibilityConfiguration" label="LoginButton"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="EiS-PR-wWO"/>
@@ -96,7 +94,7 @@
                     </userDefinedRuntimeAttributes>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7S-as-iux" customClass="ActivityIndicatorView">
-                    <rect key="frame" x="148" y="325" width="24" height="24"/>
+                    <rect key="frame" x="148" y="305" width="24" height="24"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="24" id="gbJ-eb-h0d"/>
@@ -110,7 +108,9 @@
                         <constraint firstAttribute="height" constant="44" id="09t-PI-D2R"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
-                    <state key="normal" title="or Sign out"/>
+                    <state key="normal" title="or Sign out">
+                        <color key="titleColor" name="Accent"/>
+                    </state>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.98039215690000003" green="0.98431372549999996" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -151,4 +151,9 @@
             <point key="canvasLocation" x="-16.800000000000001" y="43.628185907046479"/>
         </view>
     </objects>
+    <resources>
+        <namedColor name="Accent">
+            <color red="0.89803922176361084" green="0.48627451062202454" blue="0.84705883264541626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

@@ -81,7 +81,7 @@ namespace Toggl.iOS.ViewControllers
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIKit.UIImageView StartTimeEntryButton { get; set; }
+		UIKit.UIButton StartTimeEntryButton { get; set; }
 
 		[Outlet]
 		UIKit.UIView StartTimeEntryTooltip { get; set; }
@@ -182,6 +182,11 @@ namespace Toggl.iOS.ViewControllers
 				FinalTooltipBackground = null;
 			}
 
+			if (FinalTooltipCenterVerticallyConstraint != null) {
+				FinalTooltipCenterVerticallyConstraint.Dispose ();
+				FinalTooltipCenterVerticallyConstraint = null;
+			}
+
 			if (FinalTooltipCloseIcon != null) {
 				FinalTooltipCloseIcon.Dispose ();
 				FinalTooltipCloseIcon = null;
@@ -277,6 +282,31 @@ namespace Toggl.iOS.ViewControllers
 				TableShadow = null;
 			}
 
+			if (TapToStopTooltip != null) {
+				TapToStopTooltip.Dispose ();
+				TapToStopTooltip = null;
+			}
+
+			if (TapToStopTooltipArrow != null) {
+				TapToStopTooltipArrow.Dispose ();
+				TapToStopTooltipArrow = null;
+			}
+
+			if (TapToStopTooltipBackground != null) {
+				TapToStopTooltipBackground.Dispose ();
+				TapToStopTooltipBackground = null;
+			}
+
+			if (TapToStopTooltipCloseIcon != null) {
+				TapToStopTooltipCloseIcon.Dispose ();
+				TapToStopTooltipCloseIcon = null;
+			}
+
+			if (TapToStopTooltipLabel != null) {
+				TapToStopTooltipLabel.Dispose ();
+				TapToStopTooltipLabel = null;
+			}
+
 			if (TimeEntriesLogTableView != null) {
 				TimeEntriesLogTableView.Dispose ();
 				TimeEntriesLogTableView = null;
@@ -300,36 +330,6 @@ namespace Toggl.iOS.ViewControllers
 			if (WelcomeBackView != null) {
 				WelcomeBackView.Dispose ();
 				WelcomeBackView = null;
-			}
-
-			if (TapToStopTooltip != null) {
-				TapToStopTooltip.Dispose ();
-				TapToStopTooltip = null;
-			}
-
-			if (TapToStopTooltipBackground != null) {
-				TapToStopTooltipBackground.Dispose ();
-				TapToStopTooltipBackground = null;
-			}
-
-			if (TapToStopTooltipLabel != null) {
-				TapToStopTooltipLabel.Dispose ();
-				TapToStopTooltipLabel = null;
-			}
-
-			if (TapToStopTooltipCloseIcon != null) {
-				TapToStopTooltipCloseIcon.Dispose ();
-				TapToStopTooltipCloseIcon = null;
-			}
-
-			if (TapToStopTooltipArrow != null) {
-				TapToStopTooltipArrow.Dispose ();
-				TapToStopTooltipArrow = null;
-      }
-
-			if (FinalTooltipCenterVerticallyConstraint != null) {
-				FinalTooltipCenterVerticallyConstraint.Dispose ();
-				FinalTooltipCenterVerticallyConstraint = null;
 			}
 		}
 	}

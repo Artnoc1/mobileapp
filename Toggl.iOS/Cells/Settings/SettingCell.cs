@@ -56,6 +56,7 @@ namespace Toggl.iOS.Cells.Settings
                 case ToggleRow toggle:
                     var switchControl = new UISwitch();
                     switchControl.On = toggle.Value;
+                    switchControl.OnTintColor = ColorAssets.Accent;
                     switchControl.Rx().Changed()
                         .Delay(TimeSpan.FromSeconds(0.5)) // This is so the switch animation has time to finish before refresh
                         .Subscribe(_ => toggle.Action.Execute())

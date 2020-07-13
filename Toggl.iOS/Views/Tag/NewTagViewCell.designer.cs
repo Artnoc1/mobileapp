@@ -13,21 +13,29 @@ namespace Toggl.iOS.Views.Tag
 	partial class NewTagViewCell
 	{
 		[Outlet]
-		UIKit.UIImageView SelectedImageView { get; set; }
+		UIKit.UIView CheckedImageView { get; set; }
 
 		[Outlet]
 		UIKit.UILabel TextLabel { get; set; }
 
+		[Outlet]
+		UIKit.UIImageView UncheckedImageView { get; set; }
+		
 		void ReleaseDesignerOutlets ()
 		{
+			if (UncheckedImageView != null) {
+				UncheckedImageView.Dispose ();
+				UncheckedImageView = null;
+			}
+
+			if (CheckedImageView != null) {
+				CheckedImageView.Dispose ();
+				CheckedImageView = null;
+			}
+
 			if (TextLabel != null) {
 				TextLabel.Dispose ();
 				TextLabel = null;
-			}
-
-			if (SelectedImageView != null) {
-				SelectedImageView.Dispose ();
-				SelectedImageView = null;
 			}
 		}
 	}
