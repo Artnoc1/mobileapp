@@ -18,7 +18,7 @@ namespace Toggl.Networking.Tests.Extensions
 
             var anonymizedUri = uri.Anonymize();
 
-            anonymizedUri.ToString().Should().Be("https://mobile.toggl.space/api/v9/workspaces/{id}");
+            anonymizedUri.ToString().Should().Be("https://mobile.track.toggl.space/api/v9/workspaces/{id}");
         }
 
         [Property]
@@ -28,7 +28,7 @@ namespace Toggl.Networking.Tests.Extensions
 
             var anonymizedUri = uri.Anonymize();
 
-            anonymizedUri.ToString().Should().Be("https://mobile.toggl.space/api/v9/workspaces/{id}/projects");
+            anonymizedUri.ToString().Should().Be("https://mobile.track.toggl.space/api/v9/workspaces/{id}/projects");
         }
 
         [Property]
@@ -55,11 +55,11 @@ namespace Toggl.Networking.Tests.Extensions
         public void RemovesAnIdButKeepsTimestampIntact(PositiveInt id)
         {
             var date = new DateTimeOffset(2018, 01, 02, 03, 04, 05, TimeSpan.Zero);
-            var uri = new Uri(new Uri("https://mobile.toggl.space/api/v9/"), $"workspaces/{id.Get}/something?since={date.ToUnixTimeSeconds()}");
+            var uri = new Uri(new Uri("https://mobile.track.toggl.space/api/v9/"), $"workspaces/{id.Get}/something?since={date.ToUnixTimeSeconds()}");
 
             var anonymizedUri = uri.Anonymize();
 
-            anonymizedUri.ToString().Should().Be($"https://mobile.toggl.space/api/v9/workspaces/{{id}}/something?since={date.ToUnixTimeSeconds()}");
+            anonymizedUri.ToString().Should().Be($"https://mobile.track.toggl.space/api/v9/workspaces/{{id}}/something?since={date.ToUnixTimeSeconds()}");
         }
     }
 }
