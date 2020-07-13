@@ -24,11 +24,6 @@ namespace Toggl.iOS
 
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
-#if !USE_PRODUCTION_API
-            System.Net.ServicePointManager.ServerCertificateValidationCallback
-                += (sender, certificate, chain, sslPolicyErrors) => true;
-#endif
-
 #if !DEBUG
             Firebase.Core.App.Configure();
             Messaging.SharedInstance.Delegate = this;
